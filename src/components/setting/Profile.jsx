@@ -1,17 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import "./setting.css";
 
 export default function Profile() {
+  const [imagePreview, setImagePreview] = useState(null);
+
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setImagePreview(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleRemoveImage = () => {
+    setImagePreview(null);
+  };
+
   return (
     <div className="form-container">
       <div className="row">
         <div className="col-md-2 image-column">
           <label htmlFor="file-upload" className="image-upload-label">
             <div className="profile-image">
-              <span className="edit-icon">+</span>
+              {imagePreview ? (
+                <img
+                  src={imagePreview}
+                  alt="Profile Preview"
+                  className="image-preview"
+                />
+              ) : (
+                <i className="bi bi-plus edit-icon"></i>
+              )}
             </div>
           </label>
-          <input type="file" id="file-upload" className="image-input" />
+          <input
+            type="file"
+            id="file-upload"
+            className="image-input"
+            onChange={handleImageUpload}
+          />
+          {imagePreview && (
+            <button className="remove-button" onClick={handleRemoveImage}>
+              Remove
+            </button>
+          )}
         </div>
         <div className="col-md-4 input-column">
           <label>Your Name</label>

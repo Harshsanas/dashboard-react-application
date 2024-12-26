@@ -14,19 +14,19 @@ export default function Setting() {
             className={`tab btn ${activeTab === "general" ? "active" : ""}`}
             onClick={() => setActiveTab("general")}
           >
-            General
+            Edit Profile
           </button>
           <button
             className={`tab btn ${activeTab === "account" ? "active" : ""}`}
             onClick={() => setActiveTab("account")}
           >
-            Account
+            Preferences
           </button>
           <button
             className={`tab btn ${activeTab === "privacy" ? "active" : ""}`}
             onClick={() => setActiveTab("privacy")}
           >
-            Privacy
+            Security
           </button>
         </div>
       </div>
@@ -34,10 +34,10 @@ export default function Setting() {
         <div className="tab-content">
           {activeTab === "general" && <Profile />}
           {activeTab === "account" && (
-            <div>Account settings content goes here.</div>
+            <div>Preferences settings content goes here.</div>
           )}
           {activeTab === "privacy" && (
-            <div>Privacy settings content goes here.</div>
+            <div>Security settings content goes here.</div>
           )}
         </div>
       </div>
