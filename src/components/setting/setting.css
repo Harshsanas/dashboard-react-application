@@ -122,3 +122,25 @@ input:focus {
     margin-bottom: 20px;
   }
 }
+
+.save-button-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  margin-top: auto; /* Push to the bottom */
+}
+
+.save-button {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #232323;
+}

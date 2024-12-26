@@ -36,7 +36,9 @@ export default function Profile() {
           <input type="text" placeholder="Enter city" />
           <label>Country</label>
           <input type="text" placeholder="Enter country" />
-          <button>Save</button>
+          <div className="save-button-container">
+            <button className="save-button">Save</button>
+          </div>
         </div>
       </div>
     </div>
