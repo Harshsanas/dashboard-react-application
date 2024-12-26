@@ -1,0 +1,25 @@
+.layout-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layout-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.layout-content.sidebar-open {
+  margin-left: 250px;
+}
+
+.layout-content.sidebar-closed {
+  margin-left: 0;
+}
+
+.outlet-container {
+  padding: 20px;
+  overflow-y: auto;
+}
