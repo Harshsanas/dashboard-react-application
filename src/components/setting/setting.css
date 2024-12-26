@@ -1,6 +1,124 @@
-.setting-container {
-  font-size: 24px;
-  color: #333;
-  text-align: center;
+.tabs {
+  gap: 10px;
+}
+
+.tab {
+  font-size: 16px;
+  background: none !important; 
+  border: none !important;     
+  cursor: pointer;
+  padding: 10px 15px;
+  position: relative;           
+  color: gray !important;       
+}
+
+.tab.active {
+  font-weight: bold;
+  color: #232323 !important;    
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333 !important; 
+}
+
+.tab:not(.active):hover {
+  color: gray !important;
+}
+
+.tab-content {
+  padding-top: 20px;
+  font-size: 16px;
+  color: gray;
+}
+
+.form-container {
+  margin: 0 auto;
   padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.image-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-input {
+  display: none;
+}
+
+.input-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .col-md-4 {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
 }
