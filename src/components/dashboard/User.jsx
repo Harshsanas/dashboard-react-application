@@ -1,36 +1,41 @@
 import React, { useState } from "react";
 import './user.css'
+import image1 from '../../assets/images1.jpg'
+import image2 from "../../assets/images2.jpg";
+import image3 from "../../assets/images3.jpg";
+import image4 from "../../assets/images4.jpg";
+import image5 from "../../assets/images5.jpg";
 
 const users = [
   {
     id: 1,
     name: "Livia Bator",
     role: "CEO",
-    img: "https://via.placeholder.com/80",
+    img: image1,
   },
   {
     id: 2,
     name: "Randy Press",
     role: "Director",
-    img: "https://via.placeholder.com/80",
+    img: image2,
   },
   {
     id: 3,
     name: "Workman",
     role: "Designer",
-    img: "https://via.placeholder.com/80",
+    img: image3,
   },
   {
     id: 4,
     name: "Workman",
     role: "Designer",
-    img: "https://via.placeholder.com/80",
+    img: image4,
   },
   {
     id: 5,
     name: "Workman",
     role: "Designer",
-    img: "https://via.placeholder.com/80",
+    img: image5,
   },
 ];
 
