@@ -1,5 +1,7 @@
 import React from "react";
 import "./navbar.css";
+import image6 from "../../assets/images6.jpg";
+
 
 export default function Navbar({ toggleSidebar, selectedItem }) {
   return (
@@ -25,11 +27,7 @@ export default function Navbar({ toggleSidebar, selectedItem }) {
         <button className="icon-button">
           <i className="bi bi-bell navbar-bell-icon"></i>
         </button>
-        <img
-          src="https://via.placeholder.com/40"
-          alt="Profile"
-          className="profile-picture"
-        />
+        <img src={image6} alt="Profile" className="profile-picture" />
       </div>
     </div>
   );
