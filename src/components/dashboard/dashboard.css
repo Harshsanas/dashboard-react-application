@@ -5,6 +5,13 @@
     margin-bottom: 10px;
 }
 
+.see-label {
+    color: #343C6A;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .card-container {
     margin-top: 10px;
     border-radius: 8px;
@@ -21,16 +28,120 @@
     justify-content: space-between;
 }
 
-.main-container .card-container {
+.main-container .card-container  {
     overflow: auto;
     flex: 1; 
 }
 
 @media (max-width: 768px) {
-    .main-container {
+    .main-container  {
         height: auto;
     }
     .row {
         flex-direction: column;
     }
+}
+
+.transaction {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.text-muted{
+    color: lightgray;
+    font-size: 14px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.credit-card {
+  width: 90%;
+  height: 250px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.dark-theme {
+  background: linear-gradient(135deg, #1e1e2f, #414159);
+}
+
+.light-theme {
+  background: #f9f9fb;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.light-theme h3,
+.light-theme h4 {
+  color: #333;
+}
+
+.card-balance {
+  font-size: 0.9em;
+}
+
+.card-balance span {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+.card-balance h3 {
+  margin-top: 5px;
+  font-size: 1.5em;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-details span {
+  font-size: 0.7em;
+  color: #aaa;
+}
+
+.card-details h4 {
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer h4 {
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.chip-icon {
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(135deg, #bbb, #ddd);
+  border-radius: 5px;
 }
