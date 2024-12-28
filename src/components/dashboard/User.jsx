@@ -58,12 +58,17 @@ function User() {
     });
   };
 
+  const startIndex = users.indexOf(visibleUsers[0]);
+  const endIndex = startIndex + visibleUsers.length - 1;
+
   return (
     <div className="app">
       <div className="slider-container">
-        <button className="arrow left-arrow" onClick={prevSlide}>
-          ◀
-        </button>
+        {startIndex > 0 && (
+          <button className="arrow left-arrow" onClick={prevSlide}>
+            <i className="bi bi-chevron-left"></i>
+          </button>
+        )}{" "}
         <div className="slider">
           {visibleUsers.map((user) => (
             <div key={user.id} className="user-card">
@@ -73,9 +78,11 @@ function User() {
             </div>
           ))}
         </div>
-        <button className="arrow right-arrow" onClick={nextSlide}>
-          ▶
-        </button>
+        {endIndex < users.length - 1 && (
+          <button className="arrow right-arrow" onClick={nextSlide}>
+            <i className="bi bi-chevron-right"></i>
+          </button>
+        )}
       </div>
       <div className="send-section">
         <label className="label-amount">Write Amount</label>
