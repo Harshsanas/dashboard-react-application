@@ -4,17 +4,26 @@ import "./navbar.css";
 export default function Navbar({ toggleSidebar, selectedItem }) {
   return (
     <div className="navbar-container">
-      <button className="toggle-button" onClick={toggleSidebar}>
-        ☰
-      </button>
-      <span className="navbar-title">{selectedItem}</span>
-      <input type="text" className="search-bar" placeholder="Search..." />
+      <div>
+        <button className="toggle-button" onClick={toggleSidebar}>
+          ☰
+        </button>
+        <span className="navbar-title">{selectedItem}</span>
+      </div>
       <div className="navbar-icons">
+        <div className="search-bar-container">
+          <input
+            type="text"
+            className="search-bar"
+            placeholder="Search for something"
+          />
+          <i className="bi bi-search search-icon"></i>
+        </div>
         <button className="icon-button">
-          <i className="bi bi-gear"></i>
+          <i className="bi bi-gear navbar-icon"></i>
         </button>
         <button className="icon-button">
-          <i className="bi bi-bell"></i>
+          <i className="bi bi-bell navbar-bell-icon"></i>
         </button>
         <img
           src="https://via.placeholder.com/40"
