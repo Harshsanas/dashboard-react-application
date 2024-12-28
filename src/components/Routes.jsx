@@ -6,7 +6,7 @@ import Setting from "./setting/Setting";
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="" element={<Dashboard />} />
       <Route path="setting" element={<Setting />} />
     </Routes>
   );

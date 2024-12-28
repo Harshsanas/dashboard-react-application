@@ -20,7 +20,7 @@ export default function Sidebar({ isOpen, setSelectedItem }) {
           }`}
         >
           <Link
-            to="/dashboard"
+            to="/"
             className="sidebar-link"
             onClick={() => handleItemClick("Dashboard")}
           >
@@ -39,7 +39,7 @@ export default function Sidebar({ isOpen, setSelectedItem }) {
             selected === "Accounts" ? "active-item" : ""
           } disabled-item`}
         >
-          <i className="bi bi-person-circle sidebar-icon"></i> Accounts
+          <i className="bi bi-person-fill sidebar-icon"></i> Accounts
         </li>
         <li
           className={`sidebar-item ${
@@ -67,7 +67,7 @@ export default function Sidebar({ isOpen, setSelectedItem }) {
             selected === "Services" ? "active-item" : ""
           } disabled-item`}
         >
-          <i className="bi bi-gear sidebar-icon"></i> Services
+          <i className="bi bi-tools sidebar-icon"></i> Services
         </li>
         <li
           className={`sidebar-item ${
@@ -86,7 +86,7 @@ export default function Sidebar({ isOpen, setSelectedItem }) {
             className="sidebar-link"
             onClick={() => handleItemClick("Setting")}
           >
-            <i className="bi bi-gear sidebar-icon"></i> Setting
+            <i className="bi bi-gear-fill sidebar-icon"></i> Setting
           </Link>
         </li>
       </ul>

@@ -42,11 +42,6 @@
   padding: 20px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-}
 
 .image-column {
   display: flex;
@@ -113,10 +108,6 @@ input:focus {
 }
 
 @media (max-width: 768px) {
-  .row {
-    flex-wrap: wrap;
-  }
-
   .col-md-4 {
     flex: 1 1 100%;
     margin-bottom: 20px;
@@ -134,16 +125,12 @@ input:focus {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background-color: gray;
+  background-color: #232323;
   width: 100px;
   margin-top: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.save-button:hover {
-  background-color: #232323;
 }
 
 .image-preview {

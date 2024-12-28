@@ -1,6 +1,36 @@
-.dashboard-container {
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-  padding: 20px;
+.label-heading {
+    color: #343C6A;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: white;
+}
+
+.main-container {
+    height: 460px; 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container .card-container {
+    overflow: auto;
+    flex: 1; 
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        height: auto;
+    }
+    .row {
+        flex-direction: column;
+    }
 }

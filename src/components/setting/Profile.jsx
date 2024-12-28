@@ -21,7 +21,7 @@ export default function Profile() {
 
   return (
     <div className="form-container">
-      <div className="row">
+      <div className="row setting-row">
         <div className="col-md-2 image-column">
           <label htmlFor="file-upload" className="image-upload-label">
             <div className="profile-image">
@@ -48,7 +48,7 @@ export default function Profile() {
             </button>
           )}
         </div>
-        <div className="col-md-4 input-column">
+        <div className="col-md-4 input-column setting-col-md-4">
           <label>Your Name</label>
           <input type="text" placeholder="Enter your full name" />
           <label>Email</label>
@@ -60,7 +60,7 @@ export default function Profile() {
           <label>Postal Code</label>
           <input type="text" placeholder="Enter postal code" />
         </div>
-        <div className="col-md-4 input-column">
+        <div className="col-md-4 input-column setting-col-md-4">
           <label>User Name</label>
           <input type="text" placeholder="Enter your username" />
           <label>Password</label>
