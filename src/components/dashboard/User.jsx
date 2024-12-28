@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './user.css'
-import image1 from '../../assets/images1.jpg'
+import "./user.css";
+import image1 from "../../assets/images1.jpg";
 import image2 from "../../assets/images2.jpg";
 import image3 from "../../assets/images3.jpg";
 import image4 from "../../assets/images4.jpg";
@@ -77,14 +77,18 @@ function User() {
           ▶
         </button>
       </div>
-
       <div className="send-section">
-        <input
-          type="number"
-          placeholder="Write Amount"
-          className="amount-input"
-        />
-        <button className="send-button">Send</button>
+        <label className="label-amount">Write Amount</label>
+        <div className="input-container">
+          <input
+            className="amount-input"
+            type="number"
+            placeholder="Enter amount"
+          />
+          <button className="send-button">
+            Send <i className="bi bi-send"></i>
+          </button>
+        </div>
       </div>
     </div>
   );
